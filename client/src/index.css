@@ -51,6 +51,7 @@ body {
   grid-column: 2 / 3;
   text-align: center;
   padding: 5%;
+  padding-left: 10%;
 }
 
 #header {
@@ -70,4 +71,8 @@ body {
   padding-left: 2px;
   padding-right: 2px;
   background-color: white;
+}
+
+.possibleHeadline {
+  font-size: 1.2em;
 }
