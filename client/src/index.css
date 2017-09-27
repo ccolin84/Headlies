@@ -1,5 +1,73 @@
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
-  padding: 0;
+  /* padding: 20%; */
+  padding-top: 0%;
   font-family: sans-serif;
+  background-image: url("pexels-photo-97050.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  height: 100%;
+}
+
+#root {
+  border-radius: 10px;
+  min-height: 70%;
+}
+
+#gameContainer, #newsSourceSelectorContainer, #quizContainer {
+  border-radius: 5px;
+  padding: 2%;
+  padding-top: 1%;
+  margin: 5%;
+}
+
+#gameContainer {
+  margin-top: 2%;
+}
+
+#newsSourceSelectorContainer, #quizContainer {
+  background-color: white;
+  margin-top: 0%;
+  margin-bottom: 3%;
+}
+
+#quizContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#questionsContainer {
+  grid-row: 1;
+  grid-column: 1 / 2;
+}
+
+#articleInfo {
+  grid-row: 1;
+  grid-column: 2 / 3;
+  text-align: center;
+  padding: 5%;
+}
+
+#header {
+  margin-top: 3%;
+  padding: 1%;
+  background-color: white;
+}
+
+#headerWelcome {
+  font-size: 2em;
+  text-align: center;
+}
+
+#headerPoweredBy {
+  border-radius: 5px;
+  float: right;
+  padding-left: 2px;
+  padding-right: 2px;
+  background-color: white;
 }

@@ -1,22 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Header from './components/Header';
-import Footer from './components/Footer';
+import GameContainer from './components/GameContainer';
 
-import './App.css';
-
-class App extends Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <div className="App">
-        <Header />
-        <Footer />
-      </div>
-    );
-  }
-}
+const App = (props) => (
+  <div className="App">
+    <Header />
+    <GameContainer />
+  </div>
+);
 
 export default App;
