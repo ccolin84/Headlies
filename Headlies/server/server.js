@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // serve the static client side files
-app.use(express.static(path.join(__dirname, '../client/build')));
+app.use(express.static(path.join(__dirname, '../build')));
 
 app.use('/api/headlines', headlinesRouter);
 app.use('/api/sources', sourcesRouter);
