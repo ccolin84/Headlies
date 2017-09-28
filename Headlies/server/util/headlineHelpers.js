@@ -7,6 +7,7 @@ const wordpos = new WordPOS();
 const generateHeadlines = (source = 'bloomberg') => {
   return getHeadLines(source)
     .then((headlinesData) => {
+      console.log('got headlinesData: ', JSON.stringify(headlinesData));
       let titles = headlinesData.articles.map((article) => article.title);
       let titlesText = titles.reduce((acc, titleText) => acc + ' ' + titleText);
       return {pos: wordpos.getPOS(titlesText), titles, headlinesData};
