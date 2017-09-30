@@ -1,6 +1,7 @@
 const fetch = require('node-fetch');
 
 // for parsing text parts of speach
+const Sentencer = require('sentencer');
 const WordPOS = require('wordpos');
 const wordpos = new WordPOS();
 
@@ -30,10 +31,18 @@ const generateFakeHeadline = (realHeadline, pos, percentageToReplace = .33) => {
   let fakeHeadline = realHeadline.slice();
   let words = fakeHeadline.split(' ');
   let verbs = pos.verbs;
+  let adjs = pos.adjectives;
   return words.map((word) => {
-    if (verbs.indexOf(word) >= 0) {
+    if (adjs.indexOf(word) >= 0) {
+      let randomAdjIndex = Math.floor(Math.random() * adjs.length);
+      let replacement = adjs[randomAdjIndex];
+      replacement[0] = (word[0] === word[0].toUpperCase()) ? replacement[0].toUpperCase() : replacement[0].toLowerCase();
+      return replacement;
+    } else if (verbs.indexOf(word) >= 0) {
       let randomVerbIndex = Math.floor(Math.random() * verbs.length);
-      return verbs[randomVerbIndex];
+      let replacement = verbs[randomVerbIndex];
+      replacement[0] = (word[0] === word[0].toUpperCase()) ? replacement[0].toUpperCase() : replacement[0].toLowerCase();
+      return replacement;
     } else {
       return word;
     }
