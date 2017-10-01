@@ -36,13 +36,15 @@ const generateFakeHeadline = (realHeadline, pos, percentageToReplace = .33) => {
     if (adjs.indexOf(word) >= 0) {
       let randomAdjIndex = Math.floor(Math.random() * adjs.length);
       let replacement = adjs[randomAdjIndex];
+      replacement = replacement.split('');
       replacement[0] = (word[0] === word[0].toUpperCase()) ? replacement[0].toUpperCase() : replacement[0].toLowerCase();
-      return replacement;
+      return replacement.join('');
     } else if (verbs.indexOf(word) >= 0) {
       let randomVerbIndex = Math.floor(Math.random() * verbs.length);
       let replacement = verbs[randomVerbIndex];
+      replacement = replacement.split('');
       replacement[0] = (word[0] === word[0].toUpperCase()) ? replacement[0].toUpperCase() : replacement[0].toLowerCase();
-      return replacement;
+      return replacement.join('');
     } else {
       return word;
     }
