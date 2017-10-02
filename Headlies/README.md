@@ -24,10 +24,6 @@ npm install
 running npm start should get the app running on localhost:3000
 
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
 ## Built With
 
 * [Express](https://expressjs.com/) - Server Framework
