@@ -38,13 +38,16 @@ body {
 
 #quizContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 1em;
+  overflow: scroll;
 }
 
 #questionsContainer {
   /* grid-row: 1;
   grid-column: 1 / 2; */
+  overflow: scroll;
+  padding-right: 2%;
 }
 
 #articleInfo {
@@ -53,6 +56,7 @@ body {
   text-align: center;
   padding: 5%;
   padding-left: 10%;
+  overflow:scroll;
 }
 
 #header {
