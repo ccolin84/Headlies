@@ -33,7 +33,7 @@ Add additional notes about how to deploy this on a live system
 * [Express](https://expressjs.com/) - Server Framework
 * [React](https://react.foundation/) - Client Side Framework
 * [Wordpos](https://github.com/moos/wordpos) - Used to parse part of speech
-* [Sentencer] (https://www.npmjs.com/package/sentencer) - Also used in text and syntax manipulation
+* [Sentencer](https://www.npmjs.com/package/sentencer) - Also used in text and syntax manipulation
 
 ## Authors
 
