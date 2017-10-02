@@ -30,6 +30,7 @@ running npm start should get the app running on localhost:3000
 * [React](https://react.foundation/) - Client Side Framework
 * [Wordpos](https://github.com/moos/wordpos) - Used to parse part of speech
 * [Sentencer](https://www.npmjs.com/package/sentencer) - Also used in text and syntax manipulation
+* [NewsAPI.org](https://www.NewsAPI.org) - Used for retrieving news stories
 
 ## Authors
 
