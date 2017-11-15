@@ -31,7 +31,6 @@ body {
 }
 
 #newsSourceSelectorContainer, #quizContainer {
-  background-color: white;
   margin-top: 0%;
   margin-bottom: 3%;
 }
@@ -54,10 +53,17 @@ body {
   flex: 1;
   min-width: 350px;
   text-align: center;
-  padding: 5%;
-  padding-left: 10%;
-  overflow:scroll;
+  padding: 2%;
+  margin-left: 10%;
+  overflow: scroll;
+  color: white;
+  background: rgb(123, 123, 123, .85);
+  border-radius: 4px;
 }
+
+a {
+  color: lightblue !important;
+} 
 
 #header {
   margin-top: 3%;
@@ -80,4 +86,8 @@ body {
 
 .possibleHeadline {
   font-size: 1.2em;
+}
+
+.componentTitle {
+  color: white;
 }

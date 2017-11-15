@@ -39,9 +39,9 @@ class QuizContainer extends Component {
       let mixedHeadlines = fakeHeadlines.slice();
       mixedHeadlines.splice(this.state.realHeadlineInx, 0, realHeadline.title);
       return (
-        <div id="quizContainer">
+        <div id='quizContainer'>
           <div id='questionsContainer'>
-            <h3>One of These Headlines is Legit</h3>
+            <h3 className='componentTitle'>One of These Headlines is Legit</h3>
             <ListGroup>
               { mixedHeadlines.map((headline, inx) => (
                 <ListGroupItem className='possibleHeadline'

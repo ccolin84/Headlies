@@ -15,7 +15,7 @@ class NewsSourceSelector extends Component {
   render() {
     return (
      <div id='newsSourceSelectorContainer'>
-       <h3>Select A Source For Your Headlines</h3>
+       <h3 className='componentTitle'>Select A Source For Your Headlines</h3>
        <FormControl componentClass='select' value={ this.state.category } onChange={ this.handleCategorySelected }>
          <option key={ 'Pick A Category!' } value={ 'Pick A Category!'}>
           Pick A Category!
